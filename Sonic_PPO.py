@@ -4,10 +4,10 @@ from stable_baselines3 import PPO
 from stable_baselines3.common.monitor import Monitor
 import wandb
 from wandb.integration.sb3 import WandbCallback
-
+import pandas
 config = {
-    "policy_type": "MlpPolicy",
-    "total_timesteps": 25000,
+    "policy_type": "CnnPolicy",
+    "total_timesteps": 1000000,
     "env_name": "SonicTheHedgehog-Genesis",
     "state": "GreenHillZone.Act1"
 }
@@ -25,7 +25,7 @@ def make_env():
     return env
 
 env = DummyVecEnv([make_env])
-env = VecVideoRecorder(env, f"videos/{run.id}", record_video_trigger=lambda x: x % 2000 == 0, video_length=200)
+env = VecVideoRecorder(env, f"videos/{run.id}", record_video_trigger=lambda x: x % 10000 == 0, video_length=200)
 
 modelname = "sonic_ppo"
 model = PPO(config["policy_type"], env, verbose=1, tensorboard_log=f"runs/{run.id}")
@@ -37,4 +37,6 @@ model.learn(
         verbose=2,
     ),
 )
+metrics_dataframe = run.history()
+metrics_dataframe.to_csv("metrics.csv")
 run.finish()

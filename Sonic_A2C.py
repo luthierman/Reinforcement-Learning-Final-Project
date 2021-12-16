@@ -7,7 +7,7 @@ from wandb.integration.sb3 import WandbCallback
 
 config = {
     "policy_type": "MlpPolicy",
-    "total_timesteps": 25000,
+    "total_timesteps": 10000,
     "env_name": "SonicTheHedgehog-Genesis",
     "state": "GreenHillZone.Act1"
 }
@@ -25,7 +25,8 @@ def make_env():
     return env
 
 env = DummyVecEnv([make_env])
-env = VecVideoRecorder(env, f"videos/{run.id}", record_video_trigger=lambda x: x % 2000 == 0, video_length=200)
+env = VecVideoRecorder(env, f"videos/{run.id}", record_video_trigger=lambda x: x % 10000 == 0, video_length=200)
+
 
 modelname = "sonic_ac2"
 model = A2C("CnnPolicy", env, verbose=1)

@@ -55,6 +55,8 @@ def run_ppo(config_ppo, initialize=False):
             verbose=2,
         ),
     )
+    # metrics_dataframe = run.history()
+    # metrics_dataframe.to_csv(f"models/{run.id}/metrics.csv")
     run.finish()
 config_ppo = {
     "policy_type": "MlpPolicy",
