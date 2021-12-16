@@ -46,7 +46,7 @@ def run_dqn(config_dqn, project_name,initialize=False):
       total_timesteps=config_dqn["total_timesteps"],
       callback=WandbCallback(
           gradient_save_freq=100,
-          model_save_path="./models/{}".format("run.id"),
+          model_save_path=f"models/{run.id}",
           verbose=2,
       ),
   )
