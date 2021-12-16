@@ -23,3 +23,4 @@ Results:
 <img src="images/W%26B%20Chart%2012_16_2021%2C%202_59_07%20AM.png" width="500"> 
 <img src="images/W%26B%20Chart%2012_16_2021%2C%202_59_36%20AM.png" width="500"> 
 <img src="images/W%26B%20Chart%2012_16_2021%2C%203_13_27%20AM.png" width="500"> 
+<img src="images/table.png" width="500"> 
