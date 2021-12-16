@@ -1,4 +1,4 @@
-# Reinforcement_Learning_Cartpole
+# Reinforcement_Learning_Final_Project
 
 * Project Description: 
 This is a project for COMS 6998 (Practical Deep Learning Systems Performance). 
