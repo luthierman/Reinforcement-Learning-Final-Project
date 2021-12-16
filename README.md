@@ -16,5 +16,10 @@ $ python Cartpole_DQN.py
 This will result in multiple folders being created for this run (models, runs, videos, and sub folders in wandb folder).
 
 
+Results:
 
-<iframe src="https://wandb.ai/luthier-man/test_rl/reports/Reinforcement-Learning-Project--VmlldzoxMzQ3NzU3" style="border:none;height:1024px;width:100%">
+
+<img src="images/W%26B%20Chart%2012_16_2021%2C%202_39_25%20AM.png" width="500"> 
+<img src="images/W%26B%20Chart%2012_16_2021%2C%202_59_07%20AM.png" width="500"> 
+<img src="images/W%26B%20Chart%2012_16_2021%2C%202_59_36%20AM.png" width="500"> 
+<img src="images/W%26B%20Chart%2012_16_2021%2C%203_13_27%20AM.png" width="500"> 
