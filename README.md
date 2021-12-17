@@ -25,6 +25,7 @@ Results:
 - A2C might have been a better balance of both worlds, as it had higher returns than DQN but was also more efficient
   - increasing the number of environments (i.e. actors) increased reward and runtime
 
+Weights and Bias Report: https://wandb.ai/luthier-man/test_rl/reports/Reinforcement-Learning-Project--VmlldzoxMzQ3NzU3
 
 <img src="images/W%26B%20Chart%2012_16_2021%2C%202_39_25%20AM.png" width="500"> 
 <img src="images/W%26B%20Chart%2012_16_2021%2C%202_59_07%20AM.png" width="500"> 
